@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Bai 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            margin: auto;
+            margin-top: 20px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .menu-header{
+            height: 80px;
+            background-color: aqua;
+        }
+        .header{
+            font-size: 30px;
+            height: 50px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            color: white;
+            justify-content: center;
+            background-color: black;
+        }
+        .menu{
+            height: 40px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+        }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menu ul li{
+            width: 60px;
+           float: left;
+           margin: 10px;
+           font-size: 15px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .menu ul li:hover{
+           float: left;
+           margin: 10px;
+           display: flex;
+           font-size: 20px;
+           align-items: center;
+           justify-content: center;
+           color: red;
+        }
+        .banner-content {
+            position: relative;
+            height: 30vh;
+          }
+        .album-example {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .btn-view{
+            margin-top: 20px;
+        }
+        .content h2{
+            display: flex;
+            justify-content: center;
+        }
+        .img-content{
+            display:flex ;
+            justify-content: space-evenly;
+
+            margin-top: 10px;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+        }
+        .box-content p{
+            display: flex;
+            justify-content: center;
+        }
+        .about-me h2{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .text-about-me{
+            text-align: center;
+        }
+        .footer{
+            height: 40px;
+            background-color: black;
+            color: white;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-header">
+            <div class="header">
+                Portfolio Website
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Portlolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner-content">
+            <div class="album-example">
+              <h2>Welcome to my portfolio website</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+              </p>
+              <button class="btn-view">View  Portlolio</button>
+            </div>
+          </div>
+          <div class="content">
+                <h2>Featured Work</h2>
+                <div class="img-content">
+                    <div class="box-content">
+                        <img class="img" alt="" src="https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"/>
+                        <p>Project 1</p>
+                    </div>
+                    <div class="box-content">
+                        <img class="img" alt="" src="https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"/>
+                        <p>Project 2</p>
+                    </div>
+                    <div class="box-content">
+                        <img class="img" alt="" src="https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"/>
+                        <p>Project 3</p>
+                    </div>
+                    <div class="box-content">
+                        <img class="img" alt="" src="https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"/>
+                        <p>Project 4</p>
+                    </div>
+                </div>
+          </div>
+          <div class="about-me">
+                <h2>About Me</h2>
+                <p class="text-about-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur optio autem harum ipsa laboriosam, voluptatum, esse possimus qui in aspernatur tenetur? Ut asperiores iste repellendus qui? Nisi molestias rem nesciunt?</p>
+          </div>
+          <div class="footer">
+            Ⓒ 2023 Portlolio Website
+          </div>
+    </div>
+</body>
+</html>

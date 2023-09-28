@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 4</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 200px 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "a   a"
+            "b   c"
+            "b   d"
+            "b   e"
+            "f   e"
+            ;
+        }
+        .box {
+            background-color: yellow;
+            border: 1px solid white;
+         }
+         .box1{
+            grid-area: a;
+            background-image: url("https://btnmt.1cdn.vn/2019/03/01/khi-khi-cau-hue.jpg");
+            padding: 10px;
+            background-size: cover;
+            background-position: center center; 
+         }
+         .box2{
+            grid-area: b;
+            height: 450px;
+            background-image: url("https://blog.chudutravel.vn/wp-content/uploads/2017/07/Le-hoi-khinh-khi-cau-Canberra.jpg");
+            background-size: cover;
+            background-position: center center; 
+            padding: 10px;
+         }
+         .box3{
+            grid-area: c;
+            height: 150px;
+            background-image: url(" https://hrv.com.vn/wp-content/uploads/2021/04/trai-nghiem-bay-tren-cao-tai-le-hoi-khinh-khi-cau-hue-2021-khinh-khi-cau.jpg");
+            background-size: cover;
+            background-position: center center; 
+            padding: 10px;
+           
+         }
+         .box4{
+            grid-area: d;
+            height: 150px;
+            background-image: url(" https://xuatkhaulaodong.com.vn/images/2018/10/03/le-hoi-kkc-c-min.jpg");
+            background-size: cover;
+            background-position: center center; 
+            padding: 10px;
+         }
+         .box5{
+            grid-area: e;
+            background-color: brown;
+            padding: 10px;
+         }
+         .box6{
+            grid-area: f;
+            height: 150px;
+            background-image: url(" https://happyvacations.com.vn/wp-content/uploads/2019/03/le-hoi-kinh-khi-cau-da-nang-2019.jpg");
+            background-size: cover;
+            background-position: center center; 
+            padding: 10px;
+         }
+         .box1 h2{
+            color: white;
+         }
+         .box1 p{
+            color: white;
+         }
+         .box2 h2{
+            color: white;
+            position: relative;
+            top: 350px;
+         }
+         .box2 p{
+            color: white;
+            position: relative;
+            top: 350px;
+         }
+         .box3 h2{
+            color: white;
+         }
+         .box3 p{
+            color: white;
+         }
+         .box4 h2{
+            color: white;
+         }
+         .box4 p{
+            color: white;
+         }
+         .box5 p{
+            color: white;
+         }
+         .btn-sign{
+            width: 200px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 15%;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            top: 200px;
+         }
+         .btn-sign:hover{
+          background-color: blue;  
+        }
+         .box6 h2{
+            color: white;
+         }
+         .box6 p{
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+                <div class="box box1">
+                    <h2>We like balloons</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+                <div class="box box2">
+                    <h2>We like balloons</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+                <div class="box box3">
+                    <h2>Angry people at balloon Sitety</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+                <div class="box box4">
+                    <h2>LEV feel M lie Cory</h2>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="box box5">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <button class="btn-sign">Sign me up!</button>
+                </div>
+                <div class="box box6"> <h2>Angry people at balloon Sitety</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p></div>
+        </div>
+    </div>
+</body>
+</html>
